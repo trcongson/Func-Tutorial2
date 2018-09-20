@@ -7,10 +7,13 @@
 <body>
 <script>
     let radius = parseInt(prompt("Nhập bán kính hình tròn: "));
-    alert(pCircle(radius));
-    alert(sCircle(radius));
-    function pCircle(a) {
-
+    alert("Chu vi hình tròn: " + pCircle(radius));
+    alert("Diện tích hình tròn: " + sCircle(radius));
+    function pCircle(r) {
+        return r*2*Math.PI;
+    }
+    function sCircle(r) {
+        return r*r*Math.PI;
     }
 </script>
 </body>

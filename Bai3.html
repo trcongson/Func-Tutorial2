@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Nhập vào một số bất kỳ: ", "5"));
+    alert("Giai thừa của số vừa nhập là: " + giaithua(num));
+    function giaithua(num) {
+        if (num === 0 || num === 1){
+            return 1;
+        }
+            return num * giaithua(num - 1);
+    }
+</script>
+</body>
+</html>
